@@ -1,0 +1,43 @@
+<template name="slider">
+  <section id="s_slider">
+    <div class="container-fluid">
+      <div class = "row">
+        <div id="carousel-slider" class="carousel slide">
+          <!-- Wskaźniki w postaci kropek -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+          </ol>
+          <!-- Slajdy -->
+          <div class="carousel-inner">
+            <div style="background-image:url(./img/1.jpg);" class="item active slider_background">
+              <div class="col-md-offset-4 col-md-4 vcenter_headerSlider">
+                <a href="#carousel-slider" role="button" data-slide="next">
+                  <p class="headerText_slider">
+                    profesjonalizm
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div style="background-image:url(./img/1.jpg);" class="item slider_background">
+              <div class="col-md-offset-4 col-md-4 vcenter_headerSlider">
+                <a href="#carousel-slider" role="button" data-slide="next">
+                  <p class="headerText_slider">
+                    kreatywnosc
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Strzałki do przewijania -->
+          <a class="left carousel-control" href="#carousel-slider" role="button" data-slide="prev">
+            <i class="fa fa-angle-left slajder"></i>
+          </a>
+          <a class="right carousel-control" href="#carousel-slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right slajder"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
